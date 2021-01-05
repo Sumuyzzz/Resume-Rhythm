@@ -2,9 +2,9 @@ let html = document.querySelector("#html");
 let style = document.querySelector("#style");
 
 let string = `
-/* 你好，我是小白
- * 接下来我要开始展示前端技术了
- * 首先我要准备*/
+/* 
+ * 接下来我要开始展示从零开始的八卦图
+ */
 
   * {
   margin:0;
