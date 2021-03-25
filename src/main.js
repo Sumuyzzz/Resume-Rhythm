@@ -12,7 +12,7 @@ let string = `
   box-sizing: border-box;
 }
 
-#div1{
+#diagrams{
   border: 1px solid red;
   width: 200px;
   height: 200px;
@@ -25,7 +25,7 @@ let string = `
 * 注意看好了
 * 首先，把 div 变成一个圆
 **/
-#div1{
+#diagrams{
   border-radius: 50%;
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   border: none;
@@ -33,11 +33,11 @@ let string = `
 /* 八卦是阴阳形成的
 * 一黑一白
 **/
-#div1{
+#diagrams{
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
 /* 加两个神秘的小球 */
-#div1::before{
+#diagrams::before{
   width: 100px;
   height: 100px;
   top: 0;
@@ -50,7 +50,7 @@ let string = `
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
-#div1::after{
+#diagrams::after{
   width: 100px;
   height: 100px;
   bottom: 0;
@@ -68,11 +68,11 @@ let string = `
     height: 50vh;
     overflow: auto;
   }
-  #div1Wrapper {
+  #diagramsWrapper {
     height: 50vh;
   }
 
-  #div1 {
+  #diagrams {
     position: relative;
     top: 0;
     right: 0;
@@ -99,7 +99,7 @@ let step = () => {
       i += 1;
       step();
     }
-  }, 100);
+  }, 10);
 };
 
 step();

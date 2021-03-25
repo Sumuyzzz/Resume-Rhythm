@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"main.js":[function(require,module,exports) {
 var html = document.querySelector("#html");
 var style = document.querySelector("#style");
-var string = "\n/* \n * \u63A5\u4E0B\u6765\u6211\u8981\u5F00\u59CB\u5C55\u793A\u4ECE\u96F6\u5F00\u59CB\u7684\u516B\u5366\u56FE\n */\n\n  * {\n  margin:0;\n  padding:0;\n  box-sizing: border-box;\n}\n\n#div1{\n  border: 1px solid red;\n  width: 200px;\n  height: 200px;\n  position:fixed;\n  left: 50%;\n  transform: translateX(-50%);\n  top: 20px;\n}\n/* \u63A5\u4E0B\u6765\u6211\u628A div \u53D8\u6210\u4E00\u4E2A\u516B\u5366\u56FE\n* \u6CE8\u610F\u770B\u597D\u4E86\n* \u9996\u5148\uFF0C\u628A div \u53D8\u6210\u4E00\u4E2A\u5706\n**/\n#div1{\n  border-radius: 50%;\n  box-shadow: 0 0 3px rgba(0,0,0,0.5);\n  border: none;\n}\n/* \u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n* \u4E00\u9ED1\u4E00\u767D\n**/\n#div1{\n  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \u52A0\u4E24\u4E2A\u795E\u79D8\u7684\u5C0F\u7403 */\n#div1::before{\n  width: 100px;\n  height: 100px;\n  top: 0;\n  left: 50%;\n  content: \"\";\n  display: block;\n  position: absolute;\n  transform: translateX(-50%);\n  background: #000;\n  border-radius: 50%;\n  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#div1::after{\n  width: 100px;\n  height: 100px;\n  bottom: 0;\n  left: 50%;\n  content: \"\";\n  display: block;\n  position: absolute;\n  transform: translateX(-50%);\n  background: #fff;\n  border-radius: 50%;\n  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n}\n@media (max-width: 500px) {\n  #html {\n    height: 50vh;\n    overflow: auto;\n  }\n  #div1Wrapper {\n    height: 50vh;\n  }\n\n  #div1 {\n    position: relative;\n    top: 0;\n    right: 0;\n  }\n}\n";
+var string = "\n/* \n * \u63A5\u4E0B\u6765\u6211\u8981\u5F00\u59CB\u5C55\u793A\u4ECE\u96F6\u5F00\u59CB\u7684\u516B\u5366\u56FE\n */\n\n  * {\n  margin:0;\n  padding:0;\n  box-sizing: border-box;\n}\n\n#diagrams{\n  border: 1px solid red;\n  width: 200px;\n  height: 200px;\n  position:fixed;\n  left: 50%;\n  transform: translateX(-50%);\n  top: 20px;\n}\n/* \u63A5\u4E0B\u6765\u6211\u628A div \u53D8\u6210\u4E00\u4E2A\u516B\u5366\u56FE\n* \u6CE8\u610F\u770B\u597D\u4E86\n* \u9996\u5148\uFF0C\u628A div \u53D8\u6210\u4E00\u4E2A\u5706\n**/\n#diagrams{\n  border-radius: 50%;\n  box-shadow: 0 0 3px rgba(0,0,0,0.5);\n  border: none;\n}\n/* \u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n* \u4E00\u9ED1\u4E00\u767D\n**/\n#diagrams{\n  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n/* \u52A0\u4E24\u4E2A\u795E\u79D8\u7684\u5C0F\u7403 */\n#diagrams::before{\n  width: 100px;\n  height: 100px;\n  top: 0;\n  left: 50%;\n  content: \"\";\n  display: block;\n  position: absolute;\n  transform: translateX(-50%);\n  background: #000;\n  border-radius: 50%;\n  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#diagrams::after{\n  width: 100px;\n  height: 100px;\n  bottom: 0;\n  left: 50%;\n  content: \"\";\n  display: block;\n  position: absolute;\n  transform: translateX(-50%);\n  background: #fff;\n  border-radius: 50%;\n  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n}\n@media (max-width: 500px) {\n  #html {\n    height: 50vh;\n    overflow: auto;\n  }\n  #diagramsWrapper {\n    height: 50vh;\n  }\n\n  #diagrams {\n    position: relative;\n    top: 0;\n    right: 0;\n  }\n}\n";
 var string2 = "";
 var i = 0;
 
@@ -141,7 +141,7 @@ var step = function step() {
       i += 1;
       step();
     }
-  }, 100);
+  }, 10);
 };
 
 step();
@@ -173,7 +173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8669" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8336" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
